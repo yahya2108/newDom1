@@ -1,83 +1,101 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" >
-		<meta name="viewport" content="width=, initial-scale=" />
-        <title>Yahya's Portfolio</title>
+<!dOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-compatible" content="IE+edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Yahya's portfolio</title>
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h2 class="logo">YAHYA</h2>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-                        </li>
-                    <li>
-                        <a href="#About">About</a>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<a href="#" class="logo">portfolio</a>
 
-                    </li>
-                    <li>
-                        <a href="#Work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#Resume">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#Contact"><button>Contact</button></a>
+            <i class='bx bx-menu'id="menu-icon"></i>
 
-                    </li>
-                </ul>
-                
-            </nav>
+			<nav class="navbar">
+				<a href="#home" class="active">Home</a>
+				<a href="#about">About</a>
+				<a href="#services">Services</a>				
+				<a href="#contact">Contact</a>
+			</nav>
         </header>
-        <main>
-            <section id="home">
-                <h2>Home</h2>
-                <img src="res/image1.jpg"alt="Acceuil" width="500" height="300">
-                <p class="paragraph">Coding is also important for students because it helps to increase confidence. <br> Coding empowers students with applicable skills such as creativity, problem-solving and persistence, it also empowers them to more confidently face a variety of challenges and opportunities.</p>
-            </section>
-            <section id="About">
-                <h2>About</h2>
-                    
-                    <p class="fp"><h3 class="fp">My qualities:</h3><ul class="fp"><li>Persevering</li><li>Rigorous </li> <li>passionate</li> <br>I will do my best to meet your needs.</ul></p>
-                    
-            </section>
-            <section id="Work">
-                <h2>Work</h2>
-                <ul>Liste of courses i took:
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                </ul>
-                <p class="paragraph">This the gaming app that i first created  </p>
-                <img  src="res/IMG-0759.jpg" alt="GamingApp" width="200" height="100">
-                <p class="paragraph">This is another application that i made but is much more instructive </p>
-                <img  src="res/IMG-0760.jpg" alt="IqTestApp" width="200" height="100">
-            </section>
-            <section id="Resume">
-                <h2>Resume</h2>
-                <p class="paragrah">To sum Everything ,my goal is to be able to do whatever i want on a computer.<br>I have a good trust that it will happen one day.<br>I Hope that my journey has satisfied you and you will Take me as your future's company developper.</p>
-            </section>
-            <section id="Contact">
-                <h2>Contact</h2>
-                <form>
-                    <label class="contact" for="fname">Nom:</label><br>
-                    <input type="text" name="fname"><br>
-                    <label class="contact" for="email">email:</label><br>
-                    <input type="text" name="email"><br>
-                    <label class="contact" for="tel">Telephone:</label><br>
-                    <input type="text" name="tel"><br>
-                </form>
 
-            </section>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Yahya Diallo</h1>
+                <h3>And I am a <span>frontend Developper</span></h3>
+                <p>As an experienced professional, I am committed to delivering exceptional results and exceeding expectations. With a strong background. I am passionate about making web pages, and strive to continuously improve my craft through practice.</p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
 
-        </main>
-        <footer>
+            <div class="home-img">
+                <img src="res/Nouvelle note.jpeg" alt="">
 
-        </footer>
-    </body>    
+            </div>    
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="res/Nouvelle note.jpeg" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>frontend Developper</h3>
+                <p>As a frontend developer, I am passionate about creating visually stunning and highly functional websites and applications. With a strong background in HTML, CSS, and JavaScript, I have honed my skills in building responsive and accessible user interfaces that provide seamless user experiences across different devices and platforms. I am well-versed in using various frontend frameworks, libraries, and tools such as React, Vue.js, Bootstrap, and Sass, to name a few. I also have experience in collaborating with designers, developers, and stakeholders to deliver projects that meet business goals and user needs. Whether it's creating dynamic animations, optimizing website performance, or implementing cutting-edge design trends, I am always eager to learn and apply new techniques to improve my craft.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2 class="heading">My <span>services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>web Development</h3>
+                    <p>As a frontend developer, I offer a range of services to help businesses and individuals enhance their online presence and improve user experiences.</p>
+                    <a href="#" class="btn">read More</a>
+                </div> 
+                
+                <div class="services-box">
+                    <i class='bx bx-paint' ></i>
+                    <h3>Graphic design</h3>
+                    <p>As a graphic designer, I strive to create visually impactful designs that effectively communicate messages and captivate audiences.</p>
+                    <a href="#" class="btn">read More</a>
+                </div> 
+
+                <div class="services-box">
+                    <i class='bx bx-bar-chart-alt' ></i>
+                    <h3>Digital Marketing</h3>
+                    <p>As a digital marketer, I am dedicated to developing and implementing effective strategies that drive business growth, increase brand awareness, and engage with target audiences across various digital platforms.</p>
+                    <a href="#" class="btn">read More</a>
+                </div>       
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span> Me!</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Adress">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile">
+                    <input type="text" placeholder="Email subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="   Your message"></textarea>
+                <input type="submit" value="send Message" class="btn">
+            </form>
+
+        </section>
+        
+
+	</body>
 </html>
